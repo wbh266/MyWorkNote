@@ -125,6 +125,9 @@
 &emsp;&emsp;执行完上述命令后，GitHub中的内容已经和本地仓库中的内容一样了，此后只要本地修改并commit之后，就可以通过`git push origin master`将本地master分支上的提交同步到GitHub远程仓库中。
 `git remote`：查看远程库信息。
 `git remote -v`：查看远程库更详细的信息。
+![](./images/git查看远程库连接方式.png)
+可以看到此时显示的连接方式都是http，如果使用ssh协议连接的话，使用以下命令更改。
+`git remote set-url origin <ssh的链接网址>`
 `git remote rm 远程库名`：删除与远程库间的联系，并没有实际删除，实际删除远程库需要登陆GitHub网站，从后台删除。
 
 #### 从远程库克隆仓库到本地

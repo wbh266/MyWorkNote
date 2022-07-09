@@ -18,7 +18,7 @@
 ## 应用软件层
 应用层由不同SWC组成（每个SWC可看作一个.c文件——这种属于Atomic SWC，其中的一个个函数是可运行实体，可以把同类Atomic SWC归类到一起成为composition SWC），某个ECU的应用层不同SWC组件间通过RTE进行通信（即片内通信，,c文件之间通过全局变量进行通信），不同的ECU间进行片外通信（例如CAN Bus）。
 ## 基础软件层
-![](./images/%E5%9F%BA%E7%A1%80%E8%BD%AF%E4%BB%B6%E5%B1%82%E7%BB%93%E6%9E%84%E5%9B%BE.png)
+![](./images/autosar基本结构.png)
 * IO和板载
 ![](./images/BSW层IO结构.png)
 ![](./images/BSW层IO名次解释.png)

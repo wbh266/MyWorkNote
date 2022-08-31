@@ -8,10 +8,6 @@
 &emsp;&emsp;自引入CAN后，汽车中的复杂线束（通常存在多种变体）已成为过去。CAN不仅可以简化项目规划和实施，还可以降低布线重量和空间要求。
 
 两种方式的区别如下图所示：
-
-![](images/ECU间通信变化.png)
-
-### CAN协议基本介绍
 #### 标准化
 &emsp;&emsp;从1994年开始，ISO启动CAN技术标准化工作，并最终形成4份标准规范。其中，ISO 11898-1描述了CAN协议。除了数据通信的参考模型，CAN协议仅包括数据链路层（介质访问控制子层MAC -Medium Access Control和逻辑链路控制子层LLC - Logical Link Control）和物理层（物理信号PLS - Physical Signaling）。
 
@@ -149,7 +145,7 @@ CAN收发器
 &emsp;&emsp;在CAN网络中，接收方选择寻址防止总线节点之间产生依赖，从而提高配置的灵活性：CAN报文是广播发送的，网络中所有CAN节点都可以接收到所有CAN报文。每个节点中都有过滤器，可以通过报文的标识符（ID）来筛选实际所需的CAN报文。虽然这会增加开销，但却可以在不修改CAN网络的情况下集成其他CAN节点。
 
 CAN通信
-&emsp;&emsp;通过[“CAN Communication Principle”动画](https://elearning.vector.com/mod/page/view.php?id=4819)可以了解如何在CAN网络中进行报文传输，以及如何使用CAN通信矩阵和接收过滤器。请阅读说明，以便充分利用动画中的全部功能。 “Typical CAN Communication”图显示了典型的通信顺序，包括构成CAN网络基础的通信矩阵，以及最终的接收和发送情况。
+&emsp;&emsp;通过[“CAN Communication Principle”动画](https://elearning.vector.com/mod/page/view.php?id=4819)可以了解如何在CAN网络中进行报文传输，以及如何使用CAN通信矩阵和接收过滤器。“Typical CAN Communication”图显示了典型的通信顺序，包括构成CAN网络基础的通信矩阵，以及最终的接收和发送情况。
 
 ![](./images/CAN的典型通信顺序.png)
 

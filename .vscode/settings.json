@@ -1,0 +1,4 @@
+{
+    "cpptest.commandLinePattern": "cpptestcli ${stopFile} ${compilerConfig} ${testConfig} ${reportDir} ${selectedFiles} -module 。-输入 ${workspaceFolder}/ecus/tc377tx-eval/build/tc3xx-eval-host-test.bdf",
+    "cpptest.testConfiguration": "c++test.dtp://NIO_NVOS_RULE_SET"
+}
